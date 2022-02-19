@@ -1,5 +1,5 @@
 .header{
-    margin: 5%;
+    margin: 2%;
 }
 
 .header-container{
@@ -23,4 +23,10 @@
     margin-bottom: 20px;
     border: #585858 solid .5px;
     background-color: #585858;
+}
+
+@media only screen and (max-width: 520px){
+    .header{
+        margin: 5%;
+    }
 }
