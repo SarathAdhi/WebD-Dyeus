@@ -10,8 +10,12 @@
     flex-direction: column;
 }
 
-.image-content{
+.image{
     margin: 5%;
+}
+
+.image-content{
+    margin: 2%;
 }
 
 .image-content h1{
@@ -79,6 +83,20 @@
 
 .month-pack{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tick{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.one-month-pack{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
     flex-direction: row;
     width: 306px;
     height: 127px;
@@ -108,4 +126,133 @@
     font-size: 6px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+}
+
+.one-month-pack-left .pack-heading,
+.two-month-pack-left .pack-heading{
+    font-size: 18px;
+}
+
+.pack-savings{
+    margin-top: -5px;
+    font-family: 'Belgrano', serif;
+    font-size: 13px;
+    color: #465D68;
+}
+
+.pack-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+}
+
+.pack-bottom .percentage-saved{
+    color: #24DB6D;
+}
+
+.pack-bottom .result{
+    color: #DB9D24;
+    margin-right: 35px;
+}
+
+.two-month-pack{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 306px;
+    height: 94px;
+    background-color: #374B5B;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.two-month-pack-left{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.two-month-pack-left .pack-savings{
+    color: #28333D;
+}
+
+.price-tag{
+    line-height: 6px;
+    font-family: 'DM Serif', serif;
+}
+
+.price-tag .original-price{
+    color: white;
+}
+
+.price-tag .mrp-price1{
+    color: #4C6070;
+    text-decoration: line-through;
+}
+
+.price-tag .mrp-price2{
+    color: #28333D;
+    text-decoration: line-through;
+}
+
+.add-to-cart-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 47px;
+    background-color: #13324A;
+    border: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.add-to-cart-btn h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 520px) {
+    
+    .add-to-cart-btn{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    
+    .image{
+        margin: 5px;
+        width: 95%;
+    }
+    .image img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .image-content{
+        margin: 2%;
+    }
+
+    .one-month-pack{
+        width: 100%;
+        margin-right: 40px;
+        height: auto;
+    }
+    .two-month-pack{
+        height: auto;
+        width: 100%;
+    }
+    .price-tag{
+        margin-right: 8px;
+    }
+    .price-section h1{
+        font-size: 30px;
+    }
 }
